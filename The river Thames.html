@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The River Remembers | A Modern Love Story</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-off-white: #FCFAF7;
+            --emerald-green: #006B54;
+            --navy-blue: #0A192F;
+            --crimson-red: #A51C30;
+            --text-main: #1A1A1A;
+            --text-secondary: #4A4A4A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-off-white);
+            color: var(--text-main);
+            font-family: 'Crimson Pro', serif;
+            line-height: 1.8;
+            font-size: 1.25rem;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Progress Bar */
+        #progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 1000;
+        }
+
+        #progress-bar {
+            height: 100%;
+            background: var(--emerald-green);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 1px solid rgba(0, 107, 84, 0.1);
+            margin-bottom: 4rem;
+        }
+
+        .eyebrow {
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            font-size: 0.9rem;
+            color: var(--emerald-green);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: var(--navy-blue);
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: var(--crimson-red);
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .meta {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 300;
+        }
+
+        /* Typography & Story Elements */
+        section {
+            margin-bottom: 6rem;
+        }
+
+        h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.4rem;
+            color: var(--emerald-green);
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: rgba(0, 107, 84, 0.2);
+            margin-left: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        blockquote {
+            margin: 4rem 0;
+            padding-left: 2rem;
+            border-left: 3px solid var(--crimson-red);
+            font-style: italic;
+            color: var(--navy-blue);
+            font-size: 1.4rem;
+        }
+
+        .dropcap::first-letter {
+            float: left;
+            font-size: 5.5rem;
+            line-height: 0.7;
+            padding-top: 0.5rem;
+            padding-right: 0.8rem;
+            color: var(--emerald-green);
+            font-weight: bold;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--emerald-green), transparent);
+            margin: 4rem 0;
+            opacity: 0.3;
+        }
+
+        footer {
+            padding: 6rem 0;
+            text-align: center;
+            background-color: var(--navy-blue);
+            color: var(--bg-off-white);
+            margin-top: 4rem;
+        }
+
+        .footer-quote {
+            font-size: 1.8rem;
+            font-style: italic;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            body { font-size: 1.15rem; }
+            .container { padding: 0 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="progress-container"><div id="progress-bar"></div></div>
+
+    <header class="container">
+        <span class="eyebrow">A Short Story</span>
+        <h1>The River Remembers</h1>
+        <p class="subtitle">A Modern Love Story</p>
+        <p class="meta">Narrated by James Hartley, thirty-eight</p>
+    </header>
+
+    <main class="container">
+        <section>
+            <p class="dropcap">The Thames keeps a kind of memory, though nobody talks about it that way anymore. My grandfather used to say so—old Thomas, back when he still walked to the Hammersmith Bridge every morning with his coffee.</p>
+            <p>"When you're lost," he'd tell me, "go to the water. It knows who you are."</p>
+            <p>I was twenty-three, working as a junior lecturer in literature at UCL, when I understood what he meant.</p>
+        </section>
+
+        <section id="part-1">
+            <h2>Part One: Confluence</h2>
+            <p>The Spring Musicale was the third week of March—the one night the city's serious musicians gathered at the Riverside Studios before they scattered back to their individual lives.</p>
+            <p>My father had invited me to help carry equipment. I carried his cello case through the lobby, past the renovated brick, the expensive lighting, the kind of place that promises culture and mostly delivers wine and networking.</p>
+            <p>I heard her voice before I turned the corner.</p>
+            <p>Not singing—humming. A melody I recognized from a Schubert recording, but in a way I'd never heard it, stripped of performance, just the sound of someone thinking out loud with music.</p>
+            <p>I stopped moving. My father glanced back, that expression he gets when I'm about to derail his schedule. "One second," I said.</p>
+            <p>She was sitting in the artists' lounge, legs tucked under her on a bench that was definitely meant for sitting properly. Dark hair, notebook open, reading something while humming like the two things naturally went together. Her name was Emma Clarke—I learned this later—and she wore a charcoal sweater with a hole in the sleeve she kept absently picking at.</p>
+            <p>She wasn't trying to be unseen. She just was unseen, the way people are when they're actually thinking.</p>
+            <p>"You know Schubert?" It was a stupid opening. The kind that makes you cringe the moment the words leave your mouth.</p>
+            <p>She looked up without annoyance, the way someone looks up from something real to assess whether the interruption might be worth it. "My mother played it constantly," she said. "Cello. I grew up thinking it was just what mornings sounded like."</p>
+            <p>I laughed. She smiled at that—not the smile you give to be polite, but the actual smile that happens when someone else gets something you were thinking.</p>
+            <p>"I'm James. My father's playing tonight."</p>
+            <p>"The cellist. Yes. He's good." She paused. "I'm Emma. My father's here arguing about microphone placement with people who don't care."</p>
+            <p>We talked for two hours. About books, about music, about whether <em>Elective Affinities</em> was a tragedy of circumstance or character. About the particular loneliness of loving something before you know how to say you love it. She was studying literary translation—French to English, mostly—and she had this way of explaining things that made you understand them differently afterward. Like she was translating the world into something clearer.</p>
+            <p>My father found us just as the first performance started. When I looked at Emma across the crowded hall during his set, during the Elgar that sounds like reaching for something just beyond your hand, I felt it: the thing that all the songs and poems had been trying to tell me. That this was real. That it happened.</p>
+        </section>
+
+        <section id="part-2">
+            <h2>Part Two: Current</h2>
+            <p>The months after were the best ones. London is small enough if you're willing to be the kind of person who walks past the same café twice a week, and Emma was willing. We found a rhythm without discussing it. Her translation office near King's Cross, my university office half a mile away, the same independent bookshop where we'd leave notes in the margins of books we thought the other might find.</p>
+            <p>She gave me a copy of her French poetry translations—on the first page, in her small, careful handwriting, a quote from Baudelaire: <em>"I love the beautiful autumn light."</em> She underlined <em>I love</em>.</p>
+            <p>I gave her a first edition of Yeats. She kept it on her desk.</p>
+            <p>We'd meet at the bridge. Watch the water move through the city like it had somewhere to be, which it did. She'd tell me things—about her divorced parents, about her father's expectations, about the fact that she'd turned down a job in Paris because she wasn't sure what she was staying for but knew she needed to find out.</p>
+            <p>I'd listen and think: <em>This. This is what people mean when they talk about witness. Being seen like this.</em></p>
+            <p>The problem was her father. Leopold Clarke was the kind of man who'd spent forty years building a consulting firm into something profitable and had no interest in philosophy about it. Successful. Skeptical. He smiled when they introduced us—that smile that contains no heat—and afterward made a point of mentioning that he'd "just promoted someone very promising" in his office. Young. Established. Clear trajectory.</p>
+            <p>"He doesn't dislike you," Emma told me once, sitting on the embankment, her shoes off, feet dangling toward water she couldn't quite touch. "He just thinks love is what happens when two sensible people build something sensible together."</p>
+            <p>"What do you think?"</p>
+            <p>She turned to face me. "I think my father is terrified I'll become my mother—talented, poor, alone. And I think he's probably right to be terrified, because I feel that too."</p>
+            <p>We didn't talk about the future. Or we did, but only in ways that felt safe—jokes about getting a flat, mentions of next year's plans that never quite crystallized. When I got the offer from Oxford, a better position, better money, better everything, I took it without really discussing it with her.</p>
+            <p>"You should go," she said when I told her. "It's the smart thing." I heard what she didn't say: <em>without me.</em></p>
+        </section>
+
+        <section id="part-3">
+            <h2>Part Three: Breaking</h2>
+            <p>It was October when everything became concrete. I sat in Leopold's office—by invitation—and made a case for myself. Better job. Better salary. Plans. A future that looked like something he could respect. He listened with his hands folded on his desk, unmoved.</p>
+            <p>"Emma deserves certainty," he said. "Not promises of <em>when things settle</em>. Not someone choosing a career and asking her to fit into it."</p>
+            <p>"That's not what I'm asking."</p>
+            <p>"No?" He looked at me steadily. "Then what exactly are you asking?"</p>
+            <p>I left without an answer. Emma didn't know I'd gone to see him. I didn't tell her. Instead, I took the Oxford job, I moved into a house with a garden that needed work, I told myself I was building something, and I stopped answering her messages with the kind of presence that requires real attention.</p>
+            <p>My replies got shorter. Less. I was afraid—genuinely afraid that if I was fully present in our connection I'd crack under the weight of it, that I'd end up back in London making bad decisions, that love and ambition couldn't occupy the same space in a life.</p>
+            <p>It took me three months of silence to nearly lose her entirely. The letter came from her sister: <em>Emma turned down the consulting job her father wanted her to take. She refused a relationship with Marcus—Leopold's protégé, very promising—which caused exactly the family crisis you might imagine. She's been working temp jobs and translating on nights. I think she's waiting for you to say something that gives her permission to stop waiting.</em></p>
+            <p>I read it four times. Then I sat in my new house with its garden and its better salary and its absolutely emptiness and I wrote her the longest, truest thing I'd ever written. Twelve pages. Not a poem, not a letter. A reckoning. I posted it that evening and then I waited.</p>
+            <p>No answer came. I called, using a number I had to ask Rustam—my oldest friend—to get me. "The Clarkes aren't available," her mother said, not unkindly, in a way that clearly meant <em>I won't let them be</em>.</p>
+            <p>And that's where I broke. Not all at once, but over months. Not dramatically. Just the slow, ordinary breaking that happens when you choose the wrong thing at the crucial moment and then choose it again and again because you're afraid to unchoose it.</p>
+        </section>
+
+        <section id="part-4">
+            <h2>Part Four: Desert</h2>
+            <p>Four years passed. I taught well. I published. I was the person my father had always wanted me to be. I was also, in some deep and permanent way, half-alive.</p>
+            <p>My colleague Rustam—he'd followed me to Oxford—eventually stopped trying to get me to acknowledge what had happened. He'd show up at my office with tea and just sit, being present in a way that made the silence feel like its own form of speaking.</p>
+            <p>"She's still in London," he said once. "Still translating. Still single, as far as I can tell."</p>
+            <p>I didn't ask for details. Knowing and not asking was somehow easier than either full knowledge or ignorance. The nights were worst. I'd read her favorite poets and hear her voice in the translations, the small choices she'd make about how to carry meaning across languages. I'd walk past the university where we'd had coffee once and see her sitting there, which of course she wasn't. I'd write emails I didn't send, letters I burned, poems I pretended weren't about her.</p>
+            <p>In the fourth year, my grandfather had a stroke. His name was Thomas and he'd walked to the bridge every morning for sixty years. Rustam called me: <em>You should come. He's asking for you.</em></p>
+        </section>
+
+        <section id="part-5">
+            <h2>Part Five: Spring</h2>
+            <p>I got back to London on a Tuesday in April. Thomas was in a care facility on Chiswick High Road, which felt like a particular cruelty—close enough to the bridge that he could smell the water if someone opened the window. He was eighty-six and his mind was leaving him in pieces, but his eyes were still sharp when they focused.</p>
+            <p>"Did you ask the river?" he said.</p>
+            <p>I didn't know what he meant. Then I did. "What?" I said stupidly.</p>
+            <p>"What the river knows about you. What it remembers." He moved his hand—the movement half-complete, like an intention that couldn't quite execute. "You had to ask it. Before deciding."</p>
+            <p>The next morning, I was at the bridge before dawn. I stood there for an hour, watching the water move through the city it no longer particularly belonged to, watching the light change from blue to grey to gold. I was trying to ask it something, but I didn't know the question. How do I become the person I should have been? How do I undo the silence I let grow? How do I ask for something I've already lost?</p>
+            <p>When I turned around, she was standing at the far end of the bridge. Emma. Older in the specific way of people who've thought about difficult things. She wore a dark coat that had seen rain. Her hair was longer. She had that same quality she'd always had—the sense of existing somewhere else first, in her own thoughts, and then coming back to the world only when she chose to. She didn't run. She walked.</p>
+            <p>"You came back," she said when she reached me.</p>
+            <p>"I should have come sooner."</p>
+            <p>"Yes." Not a concession. A fact. "You should have."</p>
+            <p>We stood in silence, the water moving past us like it had somewhere to be. "I broke off the engagement," she said. "To Marcus. I broke it because I couldn't do it—couldn't marry him and lie every day about being someone I wasn't. Couldn't stay quiet about missing you."</p>
+            <p>She looked at the water. "I've had five years of knowing exactly why my mother left and why that terrified my father and why none of that was the reason to disappear on someone."</p>
+            <p>"I'm sorry. I was—"</p>
+            <p>"Afraid," she finished. "I know. I'm angry at you for that. I'm also glad you're here." She turned to face me fully. "I'm not waiting anymore, James. Neither am I willing to watch you pretend you don't feel things. So you need to be clear about what comes next."</p>
+            <p>I took her hand. After five years, it was the same—warm, certain, like coming home to something I'd built and then abandoned.</p>
+            <p>"I want to come home," I said. "I want to ask you to marry me. Not eventually. Now. I want to spend whatever time we have left making sure you know you're the thing that matters."</p>
+            <p>She looked at me for a very long time. Then: "I'm scared."</p>
+            <p>"Of what?"</p>
+            <p>"That you'll leave again."</p>
+            <p>"I will," I said, because I owed her honesty. "I'll probably get scared again. But I won't do it silently. I'll tell you. We can be scared together."</p>
+            <p>She laughed—the same laugh, exactly itself, wholly unexpected. The sound of someone who's allowed herself to feel something real.</p>
+            <p>"Okay then," she said. "Okay."</p>
+        </section>
+
+        <section id="part-6">
+            <h2>Part Six: Flood</h2>
+            <p>Leopold Clarke had a heart attack six weeks later. It wasn't the killing kind, but it was the kind that stops everything and reorganizes what comes next. He spent three weeks in the hospital, then months at home, moving slowly through a house that suddenly seemed too large.</p>
+            <p>I visited. Not as the man his daughter was already half-engaged to, but as someone who'd learned, finally, what it meant to show up. I brought books. Sat with him. One afternoon, he asked me to read to him—some essays on business ethics that he was too weak to focus on himself—and I read instead from Camus, who I'd found in his study. <em>The absurd is the essential concept and the only truth.</em></p>
+            <p>Leopold listened with his eyes closed. "Why that?" he asked when I finished.</p>
+            <p>"Because you've spent forty years believing in certainty, and the book says certainty is a trick we tell ourselves."</p>
+            <p>He opened his eyes. "Is that why you came back?"</p>
+            <p>"No. I came back because I was half-living. I'm coming back because your daughter is the person who makes me feel whole."</p>
+            <p>He was quiet for a long time. "I thought I was protecting her," he said finally. "From disappointment. From becoming her mother. I just made her afraid in different ways."</p>
+            <p>It wasn't an apology. It was something more useful—a reckoning.</p>
+            <p>We got married in June, in a register office with Rustam and Emma's mother and Thomas, who'd rallied enough for the occasion and spent the morning crying quietly in a way that made everything matter more. The reception was at the Riverside Studios—the place where we'd met. Someone played a cello piece my father had composed the week before. Emma walked me through the crowd with her hand in mine, entirely present, entirely herself. Leopold sat with Thomas and talked about art and business and how they're both languages for trying to make meaning.</p>
+            <p>The river ran past outside, as it always does, indifferent to human arrangements but faithful in that indifference.</p>
+        </section>
+
+        <section id="epilogue">
+            <h2>Epilogue: Delta</h2>
+            <p>Twelve years later, Thomas is ninety-eight and mostly memory now—moments of clarity surrounded by long stretches of elsewhere. Our daughter—her name is Eleanor—is eight and asks why the river sounds sad when it rains. Our son—Daniel, called Kit—is five and has my grandfather's expression, like he's known most of this already.</p>
+            <p>Emma teaches at King's College now. She's finishing a book on Baudelaire. She still translates, still keeps notebooks, still has that quality of being elsewhere first before returning to the world.</p>
+            <p>Leopold died three years ago. In his last months, which were his clearest, he sat in the garden and told me: "You were right about her. And I was right to be afraid. But you were also right that fear isn't the same thing as wisdom."</p>
+            <p>The river still moves past the city, carrying everything: the years, the loss, the return, the ordinary extraordinary work of choosing someone every day. Eleanor asked me once: "Dad, does the river remember when you met Mum?"</p>
+            <p>I told her yes. "What did it tell you?"</p>
+            <p>I thought about a woman humming Schubert while she thought, a bridge in April, a hand that felt like home. I thought about the silence that nearly cost everything, and the five years of learning what it means to come back.</p>
+            <blockquote>"It told me that some things—the ones that matter most—they wait. Even when you're foolish. Even when you're afraid. They wait, patient as water, until you're ready. And then you have to take care of them properly. That's the agreement."</blockquote>
+            <p>Eleanor considered this seriously. "That's a hard agreement."</p>
+            <p>"The best ones always are," I said.</p>
+            <p>Emma came out with tea, and we sat as a family, watching the river, which goes nowhere and everywhere at once, carrying all of it—the sorrow and the joy, the lost time and the retrieved time, equally, without judgment, remembering us all.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-quote">"She was made of water and he was made of thirst. Of course the river remembered them."</p>
+            <p class="meta" style="color: rgba(252, 250, 247, 0.6);">The River Remembers &copy; 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>
